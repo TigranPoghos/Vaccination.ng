@@ -137,6 +137,9 @@ body {
 
 .main {
     flex: 1 0 auto;  
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -158,7 +161,6 @@ body {
         padding: 70px 241px 107px 241px;
         border-radius: 50px;
         background: #17C2EC;
-        position: absolute;
         z-index: 10;
         box-sizing: border-box;
         display: flex;
@@ -167,17 +169,7 @@ body {
         position: absolute;
         top: -202px;
         left: 115px;
-
-        &-background {
-            border-radius: 50px;
-            background: rgba(196, 196, 196, 0.15);
-            max-width: 1067px;
-            width: 100%;
-            height: 441px;
-            position: absolute;
-            top: -220px;
-            left: 97px;
-        }
+        box-shadow: 0px 0px 0px 18px rgba(196, 196, 196, 0.15);
 
         &-block {
             position: relative;
@@ -197,10 +189,12 @@ body {
 
     &__title {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     &__main-text {
         margin-bottom: 40px;
+        text-align: center;
     }
 
     &__logo {
@@ -267,7 +261,6 @@ body {
 
 .title {
     color: #FFF;
-    text-align: center;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -276,7 +269,6 @@ body {
 
 .main-text {
     color: #FFF;
-    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -286,12 +278,45 @@ body {
 ::-webkit-input-placeholder {
     color:rgba(0, 0, 0, 0.25);
  }
- :-moz-placeholder { 
+:-moz-placeholder { 
     color:rgba(0, 0, 0, 0.25);
  }
- ::-moz-placeholder { 
+::-moz-placeholder { 
     color:rgba(0, 0, 0, 0.25);
  }
- :-ms-input-placeholder { 
+:-ms-input-placeholder { 
     color:rgba(0, 0, 0, 0.25);
  }
+
+.advice {
+    background-color: #0B153C;
+
+    &__row {
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    &__main-text {
+        color: #17C2EC;
+        font-weight: 700;
+        margin-bottom: 40px;
+        margin-top: 1px;
+    }
+
+    &__title {
+        font-weight: 800;
+        max-width: 552px;
+    }
+
+    &__logo-text {
+        color: #17C2EC;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+}

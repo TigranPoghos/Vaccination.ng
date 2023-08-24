@@ -397,3 +397,38 @@ body {
   font-weight: 700;
   color: #17C2EC;
 }
+
+.information {
+  background-color: #0B153C;
+  padding-top: 10px;
+}
+.information__row {
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(196, 196, 196, 0.1);
+  box-shadow: 0px -10px 0px 0px rgba(196, 196, 196, 0.05);
+  padding: 40px;
+}
+.information__data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.information__data-svg {
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.1);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information__data-text {
+  max-width: 247px;
+}
+.information__data-text:first-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+.information__data-text:last-child {
+  font-weight: 700;
+}

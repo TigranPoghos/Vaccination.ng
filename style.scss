@@ -444,3 +444,44 @@ body {
         }
     }
 }
+
+.information {
+    background-color: #0B153C;
+    padding-top: 10px;
+
+    &__row {
+        border-radius: 20px 20px 0px 0px;
+        background: rgba(196, 196, 196, 0.10);
+        box-shadow: 0px -10px 0px 0px rgba(196, 196, 196, 0.05);
+        padding: 40px;
+    }
+
+    &__data {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-svg {
+            border-radius: 10px;
+            background: rgba(196, 196, 196, 0.10);
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-text {
+            max-width: 247px;
+
+            &:first-child {
+                color: rgba(255, 255, 255, 0.50);
+                font-weight: 600;
+            }
+
+            &:last-child {
+                font-weight: 700;
+            }
+        }
+    }
+}

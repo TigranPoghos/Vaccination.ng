@@ -158,7 +158,7 @@ body {
 
 .main {
   flex: 1 0 auto;
-  height: 3000px;
+  height: 4000px;
   display: flex;
   flex-direction: column;
 }
@@ -752,4 +752,198 @@ body {
   font-weight: 700;
   line-height: normal;
   max-width: 102px;
+}
+
+.vaccine__row {
+  justify-content: space-between;
+  padding: 40px 0px 33px 0px;
+}
+.vaccine__left {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+}
+.vaccine__left-title {
+  color: #000;
+  text-align: center;
+  max-width: 452px;
+}
+.vaccine__left-subtitle {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 245px;
+  margin-top: 40px;
+}
+.vaccine__left-input {
+  padding: 20px 30px;
+  box-sizing: border-box;
+  max-width: 650px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(11, 21, 60, 0.15);
+  border: none;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.vaccine__left-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 654px;
+}
+.vaccine__left-first {
+  margin-bottom: 20px;
+}
+.vaccine__left-number {
+  border-radius: 20px;
+  background: rgba(11, 21, 60, 0.15);
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 134px;
+  border: none;
+}
+.vaccine__left-phone {
+  display: flex;
+  gap: 36px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.vaccine__left-phone svg {
+  position: absolute;
+  cursor: pointer;
+}
+.vaccine__left-line {
+  width: 3px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 15px;
+  left: 114px;
+}
+.vaccine__left-svg1 {
+  top: 15px;
+  left: 30px;
+}
+.vaccine__left-svg2 {
+  top: 23px;
+  left: 80px;
+  transition: 0.4s;
+}
+.vaccine__left-svg2:hover {
+  transform: rotate(180deg);
+}
+.vaccine__left-verify {
+  color: #17C2EC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  border: 2px solid #17C2EC;
+  background: rgba(196, 196, 196, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  padding: 20px 70px;
+  align-items: flex-start;
+  cursor: pointer;
+  max-width: 214px;
+}
+.vaccine__left-verify:hover {
+  background-color: #17C2EC;
+  color: #FFF;
+}
+.vaccine__left-submit {
+  display: inline-flex;
+  padding: 20px 279px;
+  align-items: flex-start;
+  border-radius: 20px;
+  border: 2px solid #17C2EC;
+  color: #17C2EC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  max-width: 650px;
+  background-color: #FFF;
+}
+.vaccine__left-submit:hover {
+  color: #FFF;
+  background-color: #17C2EC;
+}
+.vaccine__left-bottom {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  margin-top: 40px;
+  margin-left: 108px;
+}
+.vaccine__left-second {
+  font-weight: 600;
+  max-width: 207px;
+}
+.vaccine__left-third {
+  color: #17C2EC;
+  font-weight: 700;
+  max-width: 190px;
+}
+.vaccine__right {
+  width: 380px;
+  height: 550px;
+  border-radius: 20px;
+  background: #0B153C;
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 60px 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.vaccine__right img:first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.vaccine__right img:nth-child(2) {
+  position: absolute;
+  top: -25px;
+  left: -21px;
+}
+.vaccine__right-title {
+  text-align: center;
+  font-weight: 700;
+  max-width: 116px;
+}
+.vaccine__right-button {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.25);
+  max-width: 200px;
+  padding: 13px 33px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.vaccine__right-button:hover {
+  border: 2px solid #17C2EC;
+  color: #17C2EC;
 }

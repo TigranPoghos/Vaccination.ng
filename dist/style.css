@@ -158,6 +158,14 @@ body {
 .header__button:hover {
   border-color: #17C2EC;
 }
+.header__adap-svg {
+  display: none;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.15);
+  height: 45px;
+  box-sizing: border-box;
+}
 
 .main {
   flex: 1 0 auto;
@@ -1187,4 +1195,68 @@ body {
   position: absolute;
   top: 205px;
   right: 58px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 668px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .main-text {
+    font-size: 20px;
+  }
+  .header__row {
+    margin-top: 50px;
+    margin-bottom: 31px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    gap: 4px;
+    padding-top: 0px;
+    margin-right: 0px;
+  }
+  .header__logo-line {
+    width: 100px;
+    height: 2px;
+    background: #17C2EC;
+  }
+  .header__logo-text {
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__adap-svg {
+    display: block;
+  }
+  .advice__row {
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  .advice__main-text {
+    margin-top: 0px;
+    max-width: 415px;
+    font-size: 18px;
+  }
+  .advice__title {
+    max-width: 414px;
+  }
+  .advice__logo-text {
+    font-size: 36px;
+  }
+  .advice__subtitle {
+    max-width: 502px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }

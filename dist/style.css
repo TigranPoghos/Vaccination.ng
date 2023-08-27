@@ -508,6 +508,7 @@ body {
   border: 2px solid #17C2EC;
   background: rgba(196, 196, 196, 0.1);
   margin-left: auto;
+  max-width: 142px;
 }
 .information__button p {
   font-weight: 700;
@@ -1258,5 +1259,72 @@ body {
     max-width: 502px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .advice__button {
+    margin-bottom: 55px;
+  }
+  .advice__button-vaccine {
+    font-size: 20px;
+    max-width: 175px;
+  }
+  .advice__schedule {
+    margin-bottom: 32px;
+  }
+  .advice__schedule__main-text {
+    font-size: 24px;
+  }
+  .advice__right-tabl {
+    margin-left: 73px;
+    margin-bottom: 85px;
+    margin-right: 0;
+  }
+  .advice__right-doctors {
+    left: 23px;
+  }
+  .advice__doctors-20 {
+    font-size: 24px;
+  }
+  .advice__doctors-spec {
+    font-size: 24px;
+  }
+  .advice__block-left {
+    left: 23px;
+  }
+  .advice__block-right {
+    left: 545px;
+  }
+  .information {
+    padding-top: 11px;
+  }
+  .information__row {
+    box-shadow: 0px -11px 0px 0px rgba(196, 196, 196, 0.05);
+    padding: 37px 1px 45px 12px;
+    flex-wrap: wrap;
+  }
+  .information__vaccine {
+    margin-top: 41px;
+  }
+  .information__vaccine-text {
+    width: 163px;
+  }
+  .information__location {
+    margin-right: 0;
+  }
+  .information__location-text {
+    width: 247px;
+  }
+  .information__data {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .information__data-text {
+    width: 221px;
+  }
+  .information__button {
+    margin-top: 31px;
+    max-width: 253px;
+    padding: 20px 89px;
+    margin-right: 35px;
+    width: 100%;
   }
 }

@@ -343,6 +343,11 @@ body {
   align-items: center;
   margin-bottom: 10px;
 }
+.advice__schedule-2 {
+  display: none;
+  gap: 20px;
+  align-items: center;
+}
 .advice__schedule-svg {
   display: flex;
   align-items: center;
@@ -587,12 +592,12 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none;
+  border: 3px solid transparent;
   max-width: 173px;
   width: 100%;
 }
 .check__block-button:hover {
-  border: 3px solid #17C2EC;
+  border-color: #17C2EC;
 }
 .check__block-check {
   display: flex;
@@ -603,8 +608,6 @@ body {
   width: 100%;
 }
 .check__block-click {
-  max-width: 1113px;
-  width: 100%;
   padding: 21px 174px;
   box-sizing: border-box;
   display: flex;
@@ -616,6 +619,7 @@ body {
 .check__click {
   color: #17C2EC;
   font-weight: 700;
+  max-width: 765px;
 }
 .check__click a {
   text-decoration: underline;
@@ -659,7 +663,7 @@ body {
   flex-direction: column;
   border-radius: 50px 150px 50px 50px;
   background: rgba(196, 196, 196, 0.2);
-  padding: 40px 56px 78px 40px;
+  padding: 40px 56px 74px 40px;
 }
 .reason__bottom-second {
   display: flex;
@@ -1198,7 +1202,7 @@ body {
   right: 58px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .container {
     max-width: 668px;
   }
@@ -1268,6 +1272,10 @@ body {
     max-width: 175px;
   }
   .advice__schedule {
+    display: none;
+  }
+  .advice__schedule-2 {
+    display: flex;
     margin-bottom: 32px;
   }
   .advice__schedule__main-text {
@@ -1326,5 +1334,88 @@ body {
     padding: 20px 89px;
     margin-right: 35px;
     width: 100%;
+  }
+  .logo__row {
+    padding: 10px 0px;
+    gap: 25px;
+  }
+  .logo__row img {
+    width: 148px;
+  }
+  .check__row {
+    padding: 57px 0;
+  }
+  .check__block-top {
+    padding: 16px 98px;
+  }
+  .check__block-bottom {
+    padding: 40px 65px 45px 65px;
+  }
+  .check__block-check {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .check__block-check form {
+    flex-direction: column;
+  }
+  .check__block-input {
+    max-width: 448px;
+    padding: 23px 26px;
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .check__block-button {
+    font-size: 20px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+  }
+  .check__block-click {
+    padding: 17px 42px;
+  }
+  .check__click {
+    font-size: 14px;
+    max-width: 455px;
+  }
+  .reason__row {
+    padding-bottom: 45px;
+  }
+  .reason__top {
+    flex-direction: column;
+    gap: 41px;
+    margin-bottom: 50px;
+  }
+  .reason__top-subtitle {
+    margin-left: 0;
+  }
+  .reason__bottom {
+    align-items: normal;
+    gap: 0;
+    display: grid;
+  }
+  .reason__bottom-first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 40px;
+    max-width: 450px;
+  }
+  .reason__bottom-second {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 37px;
+    padding-right: 0px;
+  }
+  .reason__bottom-third {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .reason__second-title {
+    width: 257px;
   }
 }

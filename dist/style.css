@@ -114,11 +114,6 @@ body {
   max-width: 750px;
 }
 .header__menu-item {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -127,12 +122,19 @@ body {
 .header__menu-item svg {
   display: none;
 }
-.header__menu-item:hover {
+.header__menu-item a:hover {
   font-weight: 700;
   color: #FFF;
 }
 .header__menu-item:hover svg {
   display: block;
+}
+.header__menu-item a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .header__button {
   display: inline-flex;
@@ -165,6 +167,7 @@ body {
   background: rgba(196, 196, 196, 0.15);
   height: 45px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .main {
@@ -572,7 +575,7 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
   border: 3px solid rgba(196, 196, 196, 0.15);
-  color: rgba(255, 255, 255, 0.5);
+  color: #FFF;
   font-family: "Montserrat";
   font-size: 24px;
   font-style: normal;
@@ -580,6 +583,16 @@ body {
   line-height: normal;
   background: none;
   margin-right: 20px;
+}
+.check__block-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.check__block-input:focus {
+  border-color: #17C2EC;
+  outline: 0;
+}
+.check__block-input:focus::placeholder {
+  color: #FFF;
 }
 .check__block-button {
   display: inline-flex;

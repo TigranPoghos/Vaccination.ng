@@ -1406,7 +1406,7 @@ body {
     }
 }
 
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:768px) and (max-width:1440px) {
     .container {
         max-width: 668px;
     }
@@ -1970,7 +1970,7 @@ body {
     }
 }
 
-@media (max-width:576px) {
+@media (min-width:375px) and (max-width:768px) {
     .container {
         max-width: 305px;
     }

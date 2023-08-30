@@ -608,6 +608,7 @@ body {
   border: 3px solid transparent;
   max-width: 173px;
   width: 100%;
+  cursor: pointer;
 }
 .check__block-button:hover {
   border-color: #17C2EC;
